@@ -13,7 +13,7 @@ for x in binarystringarray:
 print("Ergebnis: " + bin(result))
 
 print("Check Checksum:")
-checksumcheck = checksum ^ result
+checksumcheck = result + checksum #checksum ^ result
 print(bin(checksumcheck))
 
 def binarywrapadder(bin1, bin2):
